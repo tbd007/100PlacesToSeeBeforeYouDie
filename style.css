@@ -1,0 +1,217 @@
+body{
+  background-color:#121212;
+}
+
+#container{
+  display:flex;
+  justify-content:center;
+  align-items:center;  
+  padding-top:20px;
+}
+
+#navbar {
+  height:auto;
+  width:auto;
+  margin-top:10px;
+  margin-bottom:10px;
+  background:black;
+  border:2px solid #3edbea;
+  padding:10px;
+  box-shadow:7px 7px 10px rgba(160, 177, 174, 0.4);
+  display:grid;
+  grid-template-columns:100px 100px 100px 100px;
+  grid-template-rows:130px 100px 100px 100px;
+  grid-gap:10px;
+  grid-template-areas:"div1 div2 div3 div3"
+                      "div1 div5 div4 div7"
+                      "div6 div9 div9 div7"
+                      "div8 div9 div9 div10"
+                     ;
+  
+}
+
+@media only screen and (max-width:720px){
+  #navbar {
+    display:flex;
+    flex-direction:column;
+    flex-wrap:wrap;
+  }
+  img{
+    height:auto;
+    width:80%;
+    object-fit:cover;
+    
+  }
+  #div1{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+    
+  }
+  #div2{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+    
+  }
+  #div3{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+   
+  }
+  #div4{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+   
+  }
+  #div5{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+    
+  }
+  #div6{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+   
+  }
+  #div7{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+    
+  }
+  #div8{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+   
+  }
+  #div9{
+    height:300px;
+    width:300px;
+    margin-bottom:15px;
+   
+  }
+  #div10{
+    height:300px;
+    width:300px;
+    
+  }
+  #navbar > #div9 .tooltiptext {
+    margin-left:-200px;
+  }
+}
+
+img{
+  height:100%;
+  width:100%;
+  object-fit:cover;
+  
+}
+
+#div1{
+ grid-area:div1;
+ position:relative;  
+}
+
+#div2{
+grid-area:div2;
+position:relative;    
+}
+
+#div3{
+grid-area:div3;
+position:relative;    
+}
+
+#div4{
+grid-area:div4;
+position:relative;    
+}
+
+#div5{
+ grid-area:div5;
+ position:relative;  
+}
+
+#div6{
+grid-area:div6;
+position:relative;    
+}
+
+#div7{
+grid-area:div7;
+position:relative;    
+}
+
+#div8{
+grid-area:div8;
+position:relative;    
+}
+
+#div9{
+grid-area:div9;
+position:relative;   
+}
+
+#div10{
+grid-area:div10;
+position:relative;  
+}
+
+#navbar > #div9 .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  height:100px;
+  background-color: rgba(0, 0, 0, 0.94);
+  color:white;
+  text-align: center;
+  border-radius: 15px;
+  padding: 10px 0;
+  top:50%;
+  margin-left:-180px;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+
+#navbar > #div9:hover .tooltiptext {
+  visibility: visible;
+  
+}
+
+a{
+  text-decoration:none;
+  font-family:'Quicksand';
+  color:white;
+  font-size:15px;
+}
+
+a:hover{
+  text-decoration:underline;
+  font-size:17px;
+}
+
+#shuffle{
+  position:absolute;
+  top:15px;
+  background:rgba(0, 0, 0, 0.89);
+  border:1px solid #3edbea;
+  color:white;
+  font-family:'Quicksand';
+  padding:3px 5px;
+  
+  
+}
+
+#shuffle:hover{
+  border:1px solid white;
+  color:#3edbea;
+}
+
